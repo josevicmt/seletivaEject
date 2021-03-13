@@ -322,6 +322,6 @@ contatos
      #contatos{
         display: flex;
         justify-content:space-between;
-        margin: 25% 0% 25% 10% ;
+        margin: 25% 0% 25% 5% ;
     }
 }
