@@ -132,12 +132,14 @@ conteúdo
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 3%;
 }
 
 .info-text{
+    position: relative;
+    left: 40%;
     max-width: 60%;
     text-align: justify;
-    float: right;
 }
 
 .info-title h4{
@@ -151,6 +153,8 @@ conteúdo
 }
 
 .info-img{
+    position: relative;
+    right: 75%;
     padding-right: 5%;
     margin-left: 3%;
     position: relative;
@@ -174,8 +178,7 @@ curio
 .curi-corpo{
     max-width: 60%;
     min-height: 200px;
-    position: relative;
-    top: 6em;
+    margin-top: 10%;
 }
 
 .curi-text{
@@ -189,7 +192,7 @@ curio
 .curio-imgs{
     position: relative;
     left: 80%;
-    bottom: 100px;
+    bottom: 200px;
 }
 
 .curio-img{
@@ -258,7 +261,7 @@ contatos
     }
     .eu-img{
         position: relative;
-        left: 20%;
+        left: 26%;
         margin-top: 10%;
     }
     .eu-img img{   
@@ -267,11 +270,13 @@ contatos
 
     #info{
         display: grid;
+        position: static;
         columns: 1;
         margin-top: 10%;
     }
     
     .info-text{
+        position: static;
         max-width: 100%;
         text-align: justify;
     }
@@ -282,24 +287,20 @@ contatos
     }
     
     .info-img{
+        position: static;
         padding-right: 5%;
         margin-left: 0%;
         margin-top: 8%;
         position: relative;
-        left: 20%;
+        left: 26%;
     }
-    
 
-    #curioso{
-        min-height: 600px;
-    }
 
     .curi-corpo{
         display: grid;
         columns: 1;
         max-width: 100%;
-        position: relative;
-        top: 6em;
+        position: static;
     }
 
     .curi-text{
@@ -312,8 +313,8 @@ contatos
     
     .curio-imgs{
         position: relative;
-        left: 20%;
-        top: 100px;
+        left: 26%;
+        top: 20%;
     }
     
     .curio-img{
@@ -321,6 +322,6 @@ contatos
     }
 
     #contatos{
-        margin-top: 13%;
+        margin-top: 25%;
     }
 }
