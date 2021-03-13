@@ -1,0 +1,310 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+/*
+pallet: 00FDDC  C5FFFD  C2AFF0  24252A  0088A9
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    color: #edf0f1;
+    font-family: "Montserrat", sans-serif;
+}
+
+body{
+    margin: 0% 10%;
+    background-image: url("imagens/background1.jpg");
+    padding: 0% 7%;
+    background-size: initial;
+    overflow: auto;
+}
+
+footer{
+    text-align: center;
+    margin: 0%;
+    border: #edf0f1af;
+    border-width: 1px;
+    border-top-style:solid;
+}
+
+.corpo, footer{
+    background-color: rgba(36, 37, 42, 0.95);
+}
+/*
+Cabeçalho
+*/
+li, a{
+    font-weight: 500;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+    position: sticky;
+    top: 0%;
+    border-style: solid;
+    border-width: 1px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid;
+    border-color: #edf0f170;
+    background-color: rgba(36, 37, 42);
+}
+
+header img {
+    height: 50px;
+    width: auto;
+    filter: drop-shadow(0px 5px 3px #0e0f10cc);
+}
+
+.logo{
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.logo :hover{
+    filter: drop-shadow(0px 1px 1px rgba(0, 135, 169, 0.377));
+}
+.nav-links{
+    list-style: none;
+}
+
+.nav-links li{
+    display:inline-block;
+    padding: 0px 20px;
+    transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+    transition: all 0.3s ease 0s;
+    color: #0088a9;
+    filter: drop-shadow(1px 1px 1px rgba(0, 135, 169, 0.377));  
+}
+
+.nav-links li a:active{
+    /*00FDDC  C5FFFD  C2AFF0  24252A  0088A9*/
+    color: #0088a9;
+}
+
+/*
+conteúdo
+*/
+
+.corpo{  
+    padding: 10px 8%;    
+}
+
+/*PESSOAL*/
+
+#eu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.eu-nome h2{
+    text-align: right;
+}
+
+.eu{
+    max-width: 60%;
+    text-align: justify;
+}
+.eu-img{
+    padding-right: 5%;
+    
+}
+.eu-img img{   
+    width: 300px;
+    border-radius: 100px;
+    border-style:hidden;
+}
+
+/*INFO*/
+
+#info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info-text{
+    max-width: 60%;
+    text-align: justify;
+    float: right;
+}
+
+.info-title h4{
+    margin-right: 20px; ;
+}
+
+.info-title h3{
+    margin-left: 0%;
+    text-align: right;
+    
+}
+
+.info-img{
+    padding-right: 5%;
+    margin-left: 3%;
+    position: relative;
+    float: left;
+}
+
+.info-img img:hover{
+    opacity: .5;
+    border-radius: 50px;
+    transition: all 0.6s ease 0s;
+}
+
+.info-img img{   
+    height: 250px;
+}
+
+/*
+curio
+*/
+.curi-corpo{
+    max-width: 60%;
+    min-height: 200px;
+    position: relative;
+    top: 6em;
+}
+
+.curi-text{
+    text-align: justify;
+}
+
+.curi-title h4{
+    text-align: right;
+}
+
+.curio-imgs{
+    position: relative;
+    left: 80%;
+    bottom: 100px;
+}
+
+.curio-img{
+    width: 50px;
+}
+
+#curioso img:hover{
+    filter: drop-shadow(0px 1px 1px #edf0f1);
+}
+
+/*
+contatos
+*/
+
+#contatos{
+    display: flex;
+    justify-content:space-between;
+    margin: 0% 25%;
+}
+
+#contatos img{
+    height: 20px;
+}
+
+#contatos img:hover{
+    filter: drop-shadow(0px 1px 1px #edf0f1);
+}
+
+@media screen and (max-width: 1024px){
+    header{
+        z-index: +1;
+    }
+    
+    .corpo{
+        display: grid;
+        columns: 1;
+        column-gap: 3%;
+    }
+    #eu{
+        display: grid;
+        columns: 1;
+        column-gap: 3%;
+    }
+    
+    .eu-nome h2{
+        text-align: center;
+    }
+    
+    .eu{
+        display: inherit;
+        columns: 1;
+        column-gap: 6%;
+        max-width: 100%;
+        text-align: justify;
+    }
+    .eu-img{
+        position: relative;
+        left: 20%;
+        margin-top: 10%;
+    }
+    .eu-img img{   
+        max-width: 150px;
+    }
+
+    #info{
+        display: grid;
+        columns: 1;
+        margin-top: 10%;
+    }
+    
+    .info-text{
+        max-width: 100%;
+        text-align: justify;
+    }
+    
+    .info-title h4{
+        text-align: center;
+        margin-bottom: 5%;
+    }
+    
+    .info-img{
+        padding-right: 5%;
+        margin-left: 0%;
+        margin-top: 8%;
+        position: relative;
+        left: 20%;
+    }
+    
+
+    #curioso{
+        min-height: 600px;
+    }
+
+    .curi-corpo{
+        display: grid;
+        columns: 1;
+        max-width: 100%;
+        position: relative;
+        top: 6em;
+    }
+
+    .curi-text{
+        text-align: justify;
+    }
+    
+    .curi-title h4{
+        text-align: center;
+    }
+    
+    .curio-imgs{
+        position: relative;
+        left: 20%;
+        top: 100px;
+    }
+    
+    .curio-img{
+        width: 50px;
+    }
+}

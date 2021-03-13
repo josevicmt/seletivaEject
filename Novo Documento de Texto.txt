@@ -1,0 +1,22 @@
+<container>
+            <section id="pessoal">
+                <div class="pessoal-img">
+                </div>
+                <div class="pessoa">
+                    <div class="pessoa-img">
+                        <img src="imagens/pessoa.jpg" alt="bender">
+                    </div>
+                    <div class="pessoal-nome">
+                        <h2>José Victor</h2>
+                    </div>
+                </div>
+                <div class="pessoal-descricao">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut dolor exercitationem, culpa enim esse natus, laborum reprehenderit commodi repellat veritatis quo delectus obcaecati facilis ullam labore maiores iure provident blanditiis?</p>
+                </div>
+            </section>
+                <section id="curious">
+                </section>
+            
+                <section id="contatos">
+                </section>
+        </container>
