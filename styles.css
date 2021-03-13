@@ -234,6 +234,7 @@ contatos
     }
     
     .corpo{
+        overflow: hidden;
         display: grid;
         columns: 1;
         column-gap: 3%;
@@ -318,10 +319,8 @@ contatos
     .curio-img{
         width: 50px;
     }
-    
-     #contatos{
-        display: flex;
-        justify-content:space-between;
-        margin: 25% 0% 25% 5% ;
+    #contatos{
+        margin-top: 7%;
     }
+    
 }
