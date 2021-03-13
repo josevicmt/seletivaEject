@@ -318,4 +318,10 @@ contatos
     .curio-img{
         width: 50px;
     }
+    
+     #contatos{
+        display: flex;
+        justify-content:space-between;
+        margin: 25% 0% 25% 10% ;
+    }
 }
