@@ -1,327 +1,132 @@
-@charset "UTF-8";
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <title>Lift off</title>
+    <link rel="stylesheet" href="styles.css">
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
-/*
-pallet: 00FDDC  C5FFFD  C2AFF0  24252A  0088A9
-*/
+</head>
 
-*{
-    margin: 0;
-    padding: 0;
-    color: #edf0f1;
-    font-family: "Montserrat", sans-serif;
-}
-
-body{
-    margin: 0% 10%;
-    background-image: url("imagens/background1.jpg");
-    padding: 0% 7%;
-    background-size: initial;
-    overflow: auto;
-}
-
-footer{
-    text-align: center;
-    margin: 0%;
-    border: #edf0f1af;
-    border-width: 1px;
-    border-top-style:solid;
-}
-
-.corpo, footer{
-    background-color: rgba(36, 37, 42, 0.95);
-}
-/*
-Cabeçalho
-*/
-li, a{
-    font-weight: 500;
-    font-size: 20px;
-    text-decoration: none;
-}
-
-header {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding: 30px 10%;
-    position: sticky;
-    top: 0%;
-    border-style: solid;
-    border-width: 1px;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom: solid;
-    border-color: #edf0f170;
-    background-color: rgba(36, 37, 42);
-}
-
-header img {
-    height: 50px;
-    width: auto;
-    filter: drop-shadow(0px 5px 3px #0e0f10cc);
-}
-
-.logo{
-    cursor: pointer;
-    margin-right: auto;
-}
-
-.logo :hover{
-    filter: drop-shadow(0px 1px 1px rgba(0, 135, 169, 0.377));
-}
-.nav-links{
-    list-style: none;
-}
-
-.nav-links li{
-    display:inline-block;
-    padding: 0px 20px;
-    transition: all 0.3s ease 0s;
-}
-
-.nav-links li a:hover {
-    transition: all 0.3s ease 0s;
-    color: #0088a9;
-    filter: drop-shadow(1px 1px 1px rgba(0, 135, 169, 0.377));  
-}
-
-.nav-links li a:active{
-    /*00FDDC  C5FFFD  C2AFF0  24252A  0088A9*/
-    color: #0088a9;
-}
-
-/*
-conteúdo
-*/
-
-.corpo{  
-    padding: 10px 8%;    
-}
-
-/*PESSOAL*/
-
-#eu{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.eu-nome h2{
-    text-align: right;
-}
-
-.eu{
-    max-width: 60%;
-    text-align: justify;
-}
-.eu-img{
-    padding-right: 5%;
+<body>
     
-}
-.eu-img img{   
-    width: 300px;
-    border-radius: 100px;
-    border-style:hidden;
-}
-
-/*INFO*/
-
-#info{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 3%;
-}
-
-.info-text{
-    position: relative;
-    left: 40%;
-    max-width: 60%;
-    text-align: justify;
-}
-
-.info-title h4{
-    margin-right: 20px; ;
-}
-
-.info-title h3{
-    margin-left: 0%;
-    text-align: right;
+    <header>
+        <a href="http://www.ejectufrn.com.br/" target="_blank" class="logo"><img src="imagens/logo.png" alt="logo" class="logo" ></a>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#eu">Quem sou?</a></li>
+                <li><a href="#info">Sobre</a></li>
+                <li><a href="#curioso">Curiosidades</a></li>
+                <li><a href="#contatos">Contatos</a></li>
+            </ul>
+        </nav>
+    </header>
     
-}
 
-.info-img{
-    position: relative;
-    right: 75%;
-    padding-right: 5%;
-    margin-left: 3%;
-    position: relative;
-    
-}
+    <div class="corpo">
+        <div id="eu">
+            <div class="eu">
+                <div class="eu-nome">
+                    <h2>
+                        José Victor M Tavares
+                    </h2>
+                    <div class="eu-bio">
+                        <p>
+                            Oi, sou José Victor, ou só Zé ou Victor. Tenho 21 (passou rápido, até um dia desses eram 17 e ainda não sabia o que fazer da vida, não que hoje em dia eu saiba), estou no terceiro período (ou será o quinto? Na verdade ninguém sabe) do BC&T.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="eu-img">
+                <img src="imagens/eu.png" alt="eu">
+            </div>
+        </div> 
+        <div id="info">
+            <div class="info-text">
+                <div class="info-title">
+                    <h4>Sobre</h4>
+                </div>
+                <div class="info-descr">
+                    <p>
+                        Conclui o ensino médio no Floca, uma escola estadual próxima a UFRN. Não tinha expectativa de fazer uma faculdade, nem cheguei a estudar pro Enem, mas fiquei acima da nota de corte e cá estamos. Sempre gostei e fiquei fascinado com tecnologias, me divertia mais abrindo brinquedos e descobrindo como eles funcionavam, do que realmente brincando (meus pais nunca gostaram desse hobbie, mas acho que a possibilidade de cursar engeinharia da computação/mec pesou mais do que apenas a nota de corte).
+                    </p>
+                    <p>
+                        Esse joguinho aqui do lado foi meu projeto em LiP, sei que é bem simplita, mas é meu primeiro código mais elaborado além de uma lista de exercícios. Adorei fazer esse projeto (sim, tinha que ser de navinha) e tenho tentado voltar nele para melhora-lo (se ficar bom, quem sabe até lanço numa app store).
+                    </p>
+                    <p>
+                        Tento aprender continuamente e passar esse conhecimento pros meus amigos, colegas e até completos desconhecidos, esse sentimento é de fato gratificante.
+                    </p>
+                </div>
+            </div>
+            <div class="info-img">
+                <a href="https://josevicmt.github.io/CargoColabedcuECT/" target="_blank"><img src="imagens/cargo.png" alt="cargo"></a>
+            </div>
+            
+        </div>
 
-.info-img img:hover{
-    opacity: .5;
-    border-radius: 50px;
-    transition: all 0.6s ease 0s;
-}
+        <div id="curioso">
+            <div class="curi-corpo">
+                <div class="curi-title">
+                    <h4>Curiosidades:</h4>
+                    <div class="curi-text">
+                        <p>
+                            Já devo ter mais horas gastas com Star Wars do que consolidadas no Sigaa (queria ter gasto esse tempo com algo mais produtivo, aquele desumano do JJ Abrams); Aos 11, copiei um código de um livro e danifiquei um notebook; Adoro animais, tenho dois cachorros Luke e Chorão; Talvez eu não saiba como usar ponto e vírgula; Embora raras, aproveito muito as longas noites de sono (com calma nessas listas, professor); Não tenho muito conteúdo no github mas tô tentando mudar isso
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <table class="curio-imgs">
+                <tr>
+                    <th>
+                        <a href="https://pt.wikipedia.org/wiki/Animalia" target="_blank">
+                            <img src="imagens/pawprint.png" class="curio-img" alt="pata-icon">
+                        </a>
+                    </th>
+                    <th>
+                        <a href="https://pt.wikipedia.org/wiki/Jogo_eletr%C3%B4nico" target="_blank">
+                            <img src="imagens/console.png"  class="curio-img"  alt="pata-icon">
+                        </a>
+                    </th>
+                    <th>
+                        <a href="https://pt.wikipedia.org/wiki/Algoritmo" target="_blank">
+                            <img src="imagens/coding.png"  class="curio-img"  alt="pata-icon">
+                        </a>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <a href="https://pt.wikipedia.org/wiki/Fic%C3%A7%C3%A3o_cient%C3%ADfica" target="_blank">
+                            <img src="imagens/r2d2.png"  class="curio-img"  alt="pata-icon">
+                        </a>
+                    </th>
+                    <th>
+                        <a href="https://pt.wikipedia.org/wiki/Streaming" target="_blank">
+                            <img src="imagens/smart-tv.png"  class="curio-img"  alt="pata-icon">
+                        </a>
+                    </th>
+                    <th>
+                        <a href="https://pt.wikipedia.org/wiki/Sono" target="_blank">
+                            <img src="imagens/bed.png"  class="curio-img"  alt="pata-icon">
+                        </a>
+                    </th>
+                </tr>
+            </table>
+        </div>
 
-.info-img img{   
-    height: 300px;
-    width: auto;
-}
+        <div id="contatos">
+            <div><a href="https://web.whatsapp.com/send?phone=+5584988041333" target="_blank" class="contato"><img src="imagens/wpp.png" alt="wpp-icon"></a></div>
+            <div><a href="https://github.com/josevicmt" target="_blank" class="contato"><img src="imagens/github.png" alt="wpp-icon"></a></div>
+            <div><a href="https://t.me/JosecViMT" target="_blank" class="contato"><img src="imagens/telegram.png" alt="telegram-icon"></a></div>
+            <div><a href="mailto:https://t.me/JosecViMT" target="_blank" class="contato"><img src="imagens/mail.png" alt="mail-icon"></a></div>
+        </div>
+        
+    </div> 
+     
+</body>
+<footer id="rodape">
+        <p>ProSEmpre -  EJECT ©  2021.1.</p>
+</footer>
 
-/*
-curio
-*/
-.curi-corpo{
-    max-width: 60%;
-    min-height: 200px;
-    margin-top: 10%;
-}
-
-.curi-text{
-    text-align: justify;
-}
-
-.curi-title h4{
-    text-align: right;
-}
-
-.curio-imgs{
-    position: relative;
-    left: 80%;
-    bottom: 200px;
-}
-
-.curio-img{
-    width: 50px;
-}
-
-#curioso img:hover{
-    filter: drop-shadow(0px 1px 1px #edf0f1);
-}
-
-/*
-contatos
-*/
-
-#contatos{
-    display: flex;
-    justify-content:space-between;
-    margin: 0% 25%;
-}
-
-#contatos img{
-    height: 20px;
-}
-
-#contatos img:hover{
-    filter: drop-shadow(0px 1px 1px #edf0f1);
-}
-
-@media screen and (max-width: 1024px){
-    body{
-        margin: 0%;
-        background: none;
-        padding: 0%;
-        overflow: auto;
-    }
-
-    header{
-        justify-content: center;
-        z-index: +1;
-        padding: 0% 6%;
-        height: 100px;
-    }
-    
-    .corpo{
-        overflow: hidden;
-        display: grid;
-        columns: 1;
-        column-gap: 3%;
-    }
-    #eu{
-        display: grid;
-        columns: 1;
-        column-gap: 3%;
-    }
-    
-    .eu-nome h2{
-        text-align: center;
-    }
-    
-    .eu{
-        display: inherit;
-        columns: 1;
-        column-gap: 6%;
-        max-width: 100%;
-        text-align: justify;
-    }
-    .eu-img{
-        position: relative;
-        left: 26%;
-        margin-top: 10%;
-    }
-    .eu-img img{   
-        max-width: 150px;
-    }
-
-    #info{
-        display: grid;
-        position: static;
-        columns: 1;
-        margin-top: 10%;
-    }
-    
-    .info-text{
-        position: static;
-        max-width: 100%;
-        text-align: justify;
-    }
-    
-    .info-title h4{
-        text-align: center;
-        margin-bottom: 5%;
-    }
-    
-    .info-img{
-        position: static;
-        padding-right: 5%;
-        margin-left: 0%;
-        margin-top: 8%;
-        position: relative;
-        left: 26%;
-    }
-
-
-    .curi-corpo{
-        display: grid;
-        columns: 1;
-        max-width: 100%;
-        position: static;
-    }
-
-    .curi-text{
-        text-align: justify;
-    }
-    
-    .curi-title h4{
-        text-align: center;
-    }
-    
-    .curio-imgs{
-        position: relative;
-        left: 26%;
-        top: 20%;
-    }
-    
-    .curio-img{
-        width: 50px;
-    }
-
-    #contatos{
-        margin-top: 25%;
-    }
-}
+</html>
