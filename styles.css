@@ -17,7 +17,6 @@ body{
     background-image: url("imagens/background1.jpg");
     padding: 0% 7%;
     background-size: initial;
-    back
     overflow: auto;
 }
 
@@ -29,10 +28,10 @@ footer{
     border-top-style:solid;
 }
 footer, header{
-    background-color: #4A456A;
+    background-color: #313E50;
 }
 .corpo{
-    background-color: #6b8ca6c4;
+    background-color: rgba(58, 67, 95, 0.96);
 }
 /*
 Cabeçalho
@@ -107,7 +106,8 @@ conteúdo
 }
 
 .eu-nome h2{
-    text-align: right;
+    text-align: left;
+
 }
 
 .eu{
@@ -116,85 +116,71 @@ conteúdo
 }
 .eu-img{
     padding-right: 5%;
-    
 }
 .eu-img img{   
     width: 300px;
     border-radius: 100px;
     border-style:hidden;
+    max-width: 60%;
+    height: auto;
+    position: relative;
+    float: right;
 }
 
 /*INFO*/
 
 #info{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 3%;
+    justify-content: center;
+    height: auto;
+    margin-top: 8%;
 }
-
 .info-text{
-    position: relative;
-    left: 40%;
     max-width: 60%;
+    position: relative;
+    float: left;
+}
+.info-descr{
     text-align: justify;
-
 }
 
-.info-title h4{
-    margin-right: 20px;
-}
-
-.info-title h3{
-    margin-left: 0%;
+.info-title{
     text-align: right;
 }
 
 .info-img{
+    max-width: 40%;
+    height: auto;
     position: relative;
-    right: 75%;
-    padding-right: 5%;
-    margin-left: 3%;
+    float: right;
+}
+
+.info-img img{
     position: relative;
-    
+    float: right;
+    max-width: 50%;
+    height: auto;
 }
-
-.info-img img:hover{
-    opacity: .5;
-    border-radius: 50px;
-    transition: all 0.6s ease 0s;
-}
-
-.info-img img{   
-    height: 300px;
-    width: auto;
-}
-
 /*
 curio
 */
-.curi-corpo{
-    max-width: 60%;
-    min-height: 200px;
-    margin-top: 10%;
-}
-
-.curi-text{
-    text-align: justify;
-}
-
-.curi-title h4{
-    text-align: right;
-}
-
 .curio-imgs{
-    position: relative;
-    left: 80%;
-    bottom: 200px;
+    width: 35%;
 }
 
-.curio-img{
-    width: 50px;
+.curio-imgs img{
+    width:50px;
+}
+
+.curi-corpo{
+    width: 60%;
+    position: relative;
+    bottom: 115px;
+    float: right;
+}
+
+#curioso{
+    height: 300px;
+    margin-top: 500px;
 }
 
 #curioso img:hover{
@@ -219,17 +205,17 @@ contatos
     filter: drop-shadow(0px 1px 1px #edf0f1);
 }
 
-@media screen and (max-width: 1080px){
+@media screen and (max-width: 960px){
     body{
         margin: 0%;
         background: none;
         padding: 0%;
         overflow: auto;
     }
-
+    /**/
+    
     header{
         justify-content: center;
-        z-index: +1;
         padding: 0% 6%;
         height: 100px;
     }
@@ -242,6 +228,7 @@ contatos
     }
     #eu{
         display: grid;
+        justify-content: center;
         columns: 1;
         column-gap: 3%;
     }
@@ -251,26 +238,31 @@ contatos
     }
     
     .eu{
-        display: inherit;
+        display: grid;
+        justify-content: center;
         columns: 1;
         column-gap: 6%;
         max-width: 100%;
         text-align: justify;
     }
     .eu-img{
+        display: grid;
+        justify-content: center;
         position: relative;
-        left: 26%;
-        margin-top: 10%;
+        left: 0%;
+        margin-top: 0%;
     }
     .eu-img img{   
-        max-width: 150px;
+        max-width: 30%;
+        height: auto;
+        margin-left: 35%;
     }
 
     #info{
         display: grid;
         position: static;
         columns: 1;
-        margin-top: 10%;
+        margin-top: 0%;
     }
     
     .info-text{
@@ -286,40 +278,46 @@ contatos
     
     .info-img{
         position: static;
-        padding-right: 5%;
+        padding-right: 0%;
         margin-left: 0%;
         margin-top: 8%;
         position: relative;
-        left: 26%;
+        left: 20%;
     }
 
-
-    .curi-corpo{
+    #curioso{
         display: grid;
         columns: 1;
-        max-width: 100%;
-        position: static;
+        align-items: center;
+        justify-content: center;
+        margin-top: 15%;
+        height:auto;
     }
 
-    .curi-text{
-        text-align: justify;
+    .curi-corpo{
+        width: 100%;
+        position: relative;
+        bottom: 60%;
     }
-    
+
+    .curio-imgs{
+        align-items: center;
+        width: auto;
+        padding-left: 35%;
+        position: relative;
+        margin-top: 10%;
+        top: 180%;
+    }
+
     .curi-title h4{
         text-align: center;
     }
-    
-    .curio-imgs{
-        position: relative;
-        left: 26%;
-        top: 20%;
+    .curi-text p{
+        text-align: justify;
     }
     
-    .curio-img{
-        width: 50px;
-    }
-
     #contatos{
-        margin-top: 25%;
+        margin-top: 10%;
     }
+    
 }
