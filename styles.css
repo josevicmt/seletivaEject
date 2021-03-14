@@ -22,7 +22,7 @@ body{
 
 footer{
     text-align: center;
-    margin: 0%;
+    width: 100%;
     border: #edf0f1af;
     border-width: 1px;
     border-top-style:solid;
@@ -139,14 +139,13 @@ conteúdo
     position: relative;
     float: left;
 }
-.info-descr{
+.info-descri{
     text-align: justify;
 }
 
-.info-title{
+.info-titu{
     text-align: right;
 }
-
 .info-img{
     max-width: 40%;
     height: auto;
@@ -160,11 +159,17 @@ conteúdo
     max-width: 50%;
     height: auto;
 }
+
+.info-img img:hover{
+    border-radius: 80px;
+    opacity: .5;
+    transition: 1s;
+}
 /*
-curio
+curi    
 */
-#curioso{
-    height: 300px;
+#curi{
+    height: 200px;
     margin-top: 500px;
 }
 .curi-imgs{
@@ -182,9 +187,7 @@ curio
     float: right;
 }
 
-
-
-#curioso img:hover{
+#curi img:hover{
     filter: drop-shadow(0px 1px 1px #edf0f1);
 }
 
@@ -194,8 +197,11 @@ contatos
 
 #contatos{
     display: flex;
+    width: 70%;
     justify-content:space-between;
-    margin: 0% 25%;
+    margin: 0%;
+    padding-left: 15%;
+    padding-right: 15%;
 }
 
 #contatos img{
@@ -286,20 +292,25 @@ contatos
         left: 20%;
     }
 
-    #curioso{
+    #curi{
         display: grid;
         columns: 1;
         align-items: center;
         justify-content: center;
         margin-top: 15%;
-        margin-left: ;
         height:auto;
     }
 
     .curi-text{
+        margin-top: 0%;
+        width: 100%;    
+    }
+
+    .curi-descri{
         width: 100%;
         position: relative;
         bottom: 60%;
+        text-align: justify;
     }
 
     .curi-imgs{
@@ -311,11 +322,8 @@ contatos
         top: 180%;
     }
 
-    .curi-title h4{
+    .curi-titu h4{
         text-align: center;
-    }
-    .curi-text p{
-        text-align: justify;
     }
     
     #contatos{
