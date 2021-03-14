@@ -30,7 +30,7 @@ footer{
 footer, header{
     background-color: #313E50;
 }
-.corpo{
+.tudao{
     background-color: rgba(58, 67, 95, 0.96);
 }
 /*
@@ -93,7 +93,7 @@ header img {
 conteúdo
 */
 
-.corpo{  
+.tudao{  
     padding: 10px 8%;    
 }
 
@@ -163,25 +163,26 @@ conteúdo
 /*
 curio
 */
-.curio-imgs{
+#curioso{
+    height: 300px;
+    margin-top: 500px;
+}
+.curi-imgs{
     width: 35%;
 }
 
-.curio-imgs img{
+.curi-imgs img{
     width:50px;
 }
 
-.curi-corpo{
+.curi-text{
     width: 60%;
     position: relative;
     bottom: 115px;
     float: right;
 }
 
-#curioso{
-    height: 300px;
-    margin-top: 500px;
-}
+
 
 #curioso img:hover{
     filter: drop-shadow(0px 1px 1px #edf0f1);
@@ -220,7 +221,7 @@ contatos
         height: 100px;
     }
     
-    .corpo{
+    .tudao{
         overflow: hidden;
         display: grid;
         columns: 1;
@@ -291,16 +292,17 @@ contatos
         align-items: center;
         justify-content: center;
         margin-top: 15%;
+        margin-left: ;
         height:auto;
     }
 
-    .curi-corpo{
+    .curi-text{
         width: 100%;
         position: relative;
         bottom: 60%;
     }
 
-    .curio-imgs{
+    .curi-imgs{
         align-items: center;
         width: auto;
         padding-left: 30%;
